@@ -1,4 +1,4 @@
-const createPokemon = require("../Controllers/pokemon/createPokemon");
+const createPokemon = require("../Controllers/pokemon/CreatePokemon");
 
 const createNewPokemon = async (req, res) => {
   const {

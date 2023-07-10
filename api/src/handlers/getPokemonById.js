@@ -1,4 +1,4 @@
-const pokemonsById = require("../Controllers/pokemon/pokemonsById");
+const pokemonsById = require("../Controllers/pokemon/PokemonsById");
 const getPokemonById = async (req, res) => {
   const { id } = req.params;
   const source = isNaN(id) ? "db" : "pokeapi";

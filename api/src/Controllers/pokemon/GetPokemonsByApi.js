@@ -1,26 +1,27 @@
 const axios = require("axios");
-const API = "https://pokeapi.co/api/v2/pokemon";
-const GetPokemonsByApi= async (limit) => {
-  const resultApi = await axios.get(`${API}?limit=${limit}`);
+const API = "https://pokeapi.co/api/v2/pokemon/?limit=50";
+const GetPokemonsByApi = async (limit) => {
+  const resultApi = await axios.get(API);
 
   const allPokemons = resultApi.data.results;
 
-  for (const pokemon of allPokemons) {
+  const Pokemons = allPokemons.map(async (pokemon) => {
     const url = await axios.get(pokemon.url);
-    delete pokemon.url;
-    pokemon.id = url.data.id;
-    pokemon.height = url.data.height;
-    pokemon.weight = url.data.weight;
-    pokemon.health = url.data.stats[0].base_stat;
-    pokemon.attack = url.data.stats[1].base_stat;
-    pokemon.defense = url.data.stats[2].base_stat;
-    pokemon.speed = url.data.stats[5].base_stat;
-    pokemon.types = url.data.types.map((pkmtype) => pkmtype.type.name);
-    pokemon.image = url.data.sprites.other["official-artwork"].front_default;
-    pokemon.createdInDb = false;
-  }
-
-  return allPokemons;
+     delete pokemon.url
+     return {
+     id : url.data.id,
+     height : url.data.height,
+    weight : url.data.weight,
+    health : url.data.stats[0].base_stat,
+    attack : url.data.stats[1].base_stat,
+    defense : url.data.stats[2].base_stat,
+    speed : url.data.stats[5].base_stat,
+    types : url.data.types.map((pkmtype) => pkmtype.type.name),
+    image : url.data.sprites.other["official-artwork"].front_default,
+    createdInDb : false
+    }
+  });
+  return await Promise.all(Pokemons);
 };
 
 module.exports = GetPokemonsByApi;
