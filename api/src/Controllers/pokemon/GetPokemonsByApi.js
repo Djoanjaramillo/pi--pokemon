@@ -10,6 +10,7 @@ const GetPokemonsByApi = async (limit) => {
      delete pokemon.url
      return {
      id : url.data.id,
+     name: url.data.name,
      height : url.data.height,
     weight : url.data.weight,
     health : url.data.stats[0].base_stat,
