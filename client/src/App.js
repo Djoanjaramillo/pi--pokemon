@@ -3,10 +3,11 @@ import { Routes, Route } from "react-router-dom";
 import Landing from './Landing/Landing';
 import CharacterDetail from './components/CharacterDetail/CharacterDetail';
 import Home from './components/Home/Home';
-import NavBar from './components/navBar/navBar';
+
 
 function App() {
   return (
+   
     <div className="App">
     <Routes>
       <Route path="/" element={<Landing />} />  
@@ -14,6 +15,7 @@ function App() {
       <Route path="/detail/:id" element={<CharacterDetail />} />
       </Routes> 
     </div>
+    
   );
 }
 

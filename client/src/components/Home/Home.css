@@ -1,0 +1,12 @@
+.title{
+    color: rgb(14, 10, 10);
+    background-color:  rgb(42, 32, 185);
+    border-radius: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    width: 40%;
+   margin-left: 30%;
+    justify-content: center;
+
+}

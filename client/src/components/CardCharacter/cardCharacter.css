@@ -1,21 +1,64 @@
 .cardCharacter{
+    background-color: rgb(42, 32, 185);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-position: center;
      width: auto;
-    border: 1px solid rgb(168, 132, 132);
-    border-radius: 5px;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 30px;
     padding: 20px;
     cursor: pointer;
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
+    max-width: 300px;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+    
 }
 
 .cardCharacter:hover {
     transform: scale(1.05);
   }
-  
 
+  .image{
+    width: 250px;
+    height: 250px;} 
+
+  
+.atributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: small;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .imagecentro{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  }
+  .name{
+    color: rgb(10, 8, 8);
+    border: 1px solid rgb(12, 1, 1);
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 5px;
+  }
+  .types{
+    color: rgb(17, 13, 13);
+    border: 1px solid rgb(10, 1, 1);
+    border-radius: 5px;
+   text-transform: capitalize;
+   padding: 5px;
+  }
+  
+  
+  

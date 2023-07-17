@@ -1,6 +1,6 @@
 
 import CardCharacter from "../CardCharacter/CardCharacter";
-
+import "./Characters.css";
 const Characters = ({characters}) => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Characters = ({characters}) => {
           name={character?.name}
           id={character?.id}
           image={character?.image}
-          life={character?.life}
+          health={character?.health}
           attack={character?.attack}
           defense={character?.defense}
           speed={character?.speed}

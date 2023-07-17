@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import"./Landing.css"
  const Landing = () => {
     return (
-        <div>
-            <h1>bienvenidos a la mejor pagina de pokemons</h1>
-            <button>
-                <Link to="/home">CLICK</Link>
+        <div className="boton1" >
+            <h1 className="bienvenidos" >bienvenidos a la mejor pagina de pokemons</h1>
+            <button className="boton">
+                <Link to="/home">INGRESAR</Link>
             </button>
         </div>
     );

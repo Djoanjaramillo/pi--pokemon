@@ -47,7 +47,7 @@ const pokemonsById = async (id, source) => {
       image: pokemon.sprites.other["official-artwork"].front_default,
       createdInDb: false,
     };
-    console.log(pkmApi);
+
     return pkmApi;
   }
 };

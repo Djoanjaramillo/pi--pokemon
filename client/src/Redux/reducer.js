@@ -3,11 +3,12 @@ import {GET_CHARACTERS, CHARACTER_DETAIL,CLEAN_DETAIL, CLEAN_CHARACTERS} from '.
 const initialState = {
     characters: [],
     characterDetail: {},
+    cleanDetail: {},
 }
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case GET_CHARACTERS:
-            return {
+            return { 
                 ...state,
                 characters: action.payload
             }

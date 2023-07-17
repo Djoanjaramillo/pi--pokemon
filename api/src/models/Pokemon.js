@@ -24,10 +24,7 @@ module.exports = (sequelize) => {
           }
         }
       },
-      life: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+      
       attack: {
         type: DataTypes.INTEGER,
         allowNull: false,

@@ -3,6 +3,7 @@ const defaultImage = "https://i.postimg.cc/Qdwz52bZ/defaultimage-1.jpg";
 
 let CreatePokemon = async (
   id,
+  
   name,
   image,
   health,
@@ -19,6 +20,7 @@ let CreatePokemon = async (
   } else {
     const newpkm = await Pokemon.create({
       id,
+      life,
       name,
       health,
       attack,

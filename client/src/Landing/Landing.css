@@ -1,0 +1,35 @@
+.bienvenidos{
+    color:rgb(20, 10, 150); 
+    font-size:40px;
+    font-family: fantasy;
+    font-weight:bold;
+    font-style: arial;
+    line-height:30px;
+    letter-spacing:5px;
+    text-transform:capitalize;
+    text-align:center;
+    text-indent:30px;
+    margin-top: 23%;
+    
+}
+
+.boton
+{
+    
+    background-color: rgb(250, 247, 96);
+    
+    color:rgb(17, 18, 90);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid rgb(12, 1, 1);
+    border-radius: 5px;
+}
+.boton1{
+    background-image: url("../img/Fondos-de-pantalla-de-Pokemon\ cortado.jpg");
+}
+.boton:hover {
+    transform: scale(1.05);
+}
