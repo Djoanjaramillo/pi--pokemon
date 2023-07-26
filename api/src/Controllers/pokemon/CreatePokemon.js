@@ -1,9 +1,9 @@
 const { Pokemon, Type } = require("../../db");
 const defaultImage = "https://i.postimg.cc/Qdwz52bZ/defaultimage-1.jpg";
 
-let CreatePokemon = async (
+const CreatePokemon = async (
   id,
-  
+
   name,
   image,
   health,
@@ -20,7 +20,7 @@ let CreatePokemon = async (
   } else {
     const newpkm = await Pokemon.create({
       id,
-      life,
+      
       name,
       health,
       attack,
@@ -36,10 +36,12 @@ let CreatePokemon = async (
         name: types,
       },
     });
-    newpkm.addType(typeDb);
-    tipo = typeDb.map((elem) => elem.name);
 
-    return `se creo exitosamente el pokemon, nombre: ${name}`;
+    await newpkm.addType(typeDb);
+    tipo = typeDb.map((elem) => elem.name);
+    if (!newpkm || !tipo) {
+      throw new Error("no se pudo crear el pokemon");
+    }
   }
 };
 

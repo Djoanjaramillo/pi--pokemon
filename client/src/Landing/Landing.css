@@ -12,12 +12,15 @@
     margin-top: 23%;
     
 }
+.link{
+    text-decoration: none;
+    }
 
 .boton
 {
     
     background-color: rgb(250, 247, 96);
-    
+
     color:rgb(17, 18, 90);
     padding: 15px 32px;
     text-align: center;

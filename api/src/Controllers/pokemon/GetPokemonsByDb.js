@@ -6,10 +6,11 @@ const GetPokemonsByDb = async () => {
       model: Type,
       attributes: ["name"],
       through: {
-        types: [],
+        attributes: []
       },
     },
   });
+
   return pokemonDb.map((pokemon) => {
     return {
       id: pokemon.id,
@@ -21,7 +22,7 @@ const GetPokemonsByDb = async () => {
       defense: pokemon.defense,
       speed: pokemon.speed,
       image: pokemon.image,
-      types: pokemon.types.map((type) => type.name),
+      types: pokemon.Types.map((type) => type.name),
       createdInDb: pokemon.created,
     };
   });

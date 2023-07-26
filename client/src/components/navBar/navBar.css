@@ -1,4 +1,4 @@
-.container {
+.containerBar {
   background-color:  rgb(42, 32, 185);
   border-right: 3px solid #d4d4d4;
   height: 30px;
@@ -21,8 +21,8 @@ a:hover {
 }
 .botones {
   color: rgb(5, 2, 2);
-  background-color: #868887;
-  border-radius: 60px;
+  background-color: #818382;
+  border-radius: 6px;
   margin-left: 12px;
   margin-right: 12px;
   cursor: pointer;

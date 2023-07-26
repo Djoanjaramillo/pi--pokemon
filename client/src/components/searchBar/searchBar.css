@@ -1,23 +1,20 @@
+.input {
+  border-radius: 6px;
+  height: 18px;
+  margin-left: 12px;
+}
+.button {
+  color: rgb(5, 2, 2);
+  background-color: #878688;
+  border-radius: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+  cursor: pointer;
 
-a {
-  color: #0a0701;
-  font-weight: 700;
 }
-a:hover {
-  color: rgb(42, 32, 185);
-  font-weight: 700;
+.buscador{
+  display: flex;
+  align-items: center;
+
 }
-  .button {
-    color: #020101;
-    background-color: #8f9291;
-    border-radius: 15px;
-    margin-left: 12px;
-    margin-right: 12px;
-    cursor: pointer;
-    
-  }
-  .button:hover {
-    border: 1px solid #b7c5c1;
-    background-color: #d6ad60;
-    transition: all 0.4s ease-in-out;
-  }
+

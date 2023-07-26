@@ -1,0 +1,53 @@
+.todito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .todito2 {
+    margin-top: 10px;
+    height: fit-content;
+    border: 3px solid #f8f8f8;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(42, 32, 185);
+  }
+  .todito3{
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
+  }
+  .todito4{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    color: #cccccc;
+    background-color: rgb(10, 9, 14);
+    padding-bottom: 10px;
+  }
+  
+  .h1 {
+    width: 330px;
+    border: 3px solid #122620;
+    background-color:rgb(42, 32, 185);
+  }
+  .botoncito {
+    margin-top: 7px;
+    text-transform: uppercase;
+    color: #e6e6e6;
+    background-color: #122620;
+    cursor: pointer;
+  }
+  .botoncito:hover {
+    background-color: #13084e;
+    color:rgb(42, 32, 185);
+  }
+ 
+  .campoid {
+    display: none;
+  }
+  

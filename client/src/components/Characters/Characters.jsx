@@ -1,11 +1,13 @@
 
 import CardCharacter from "../CardCharacter/CardCharacter";
-import "./Characters.css";
+
 const Characters = ({characters}) => {
+
   return (
     <div>
       {
-      characters.map((character) => {
+      characters?.map((character) => {
+       
        return(
          <CardCharacter
           key={character?.id}

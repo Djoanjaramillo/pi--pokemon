@@ -1,0 +1,19 @@
+.boton30 {
+    cursor: pointer;
+    font-weight: 700;
+    color: #f0f0f5;
+    background-color: #122620;
+    border: 3px solid #f7f7f7;
+    height: 35px;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    transition: all 0.4s ease-in-out;
+    
+  }
+  .boton30:hover {
+    border: 3px solid #03025f;
+    background-color: #1c04a0;
+    color: #120b74;
+    transition: all 0.4s ease-in-out;
+  }

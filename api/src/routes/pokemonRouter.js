@@ -8,6 +8,7 @@ const GetAllpokemons = require("../handlers/GetAllpokemons");
 const createNewPokemon = require("../handlers/createNewPokemon");
 const deleteMyPokemon = require("../handlers/deleteMyPokemon");
 const updateMyPokemon = require("../handlers/updateMyPokemon");
+
 //!MIDDLEWARE
 const validateCreate = require("../Middlewares/ValidateCreate");
 //!RUTAS
